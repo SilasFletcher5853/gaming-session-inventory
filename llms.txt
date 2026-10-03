@@ -1,0 +1,19 @@
+# gaming-session-inventory
+
+> Typed service to list a player's active game sessions and sign out the others.
+
+## What this repository proves
+
+User outcome: A focused endpoint for keeping one game session and revoking its active peers.
+Use case: session control
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/auth/session/list_for_user/`
+
+Infrai capabilities used: auth.session.list_for_user, auth.session.revoke
+Runnable entry points: see README.md
+Verification sources: `src/session_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

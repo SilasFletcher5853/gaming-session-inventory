@@ -1,0 +1,13 @@
+{
+  "name": "gaming-session-inventory",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "npm run build && node dist/session_cli.js",
+    "test": "npm run build && node dist/session_policy.test.js",
+    "build": "tsc --noEmit false --outDir dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": { "zod": "^3.23.8" },
+  "devDependencies": { "typescript": "^5.6.3", "@types/node": "^22.0.0" }
+}
